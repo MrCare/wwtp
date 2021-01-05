@@ -1,0 +1,348 @@
+<nz-layout class="layout">
+  <nz-header>
+    <div class="logo">
+      <img
+        style="height: 30px;"
+        src="https://changzhou.ispongecity.com/assets/img/login/logo-changzhou.svg"
+      />
+      <img
+        style="height: 25px;"
+        src="https://changzhou.ispongecity.com/assets/img/login/logo-title-changzhou.svg"
+      />
+    </div>
+    <ul
+      nz-menu
+      nzTheme="dark"
+      nzMode="horizontal"
+      style="float:right;margin-right: 64px;"
+    >
+      <li nz-menu-item>工作台</li>
+      <li nz-menu-item>监管一张图</li>
+      <li nz-menu-item>接管审批</li>
+      <li nz-menu-item>执法监管</li>
+      <li nz-menu-item>源头溯源</li>
+      <li nz-submenu nzTitle="数据中心" nzIcon="database">
+        <ul>
+          <li nz-submenu nzTitle="排水信息管理">
+            <ul>
+              <li nz-menu-item>排水户信息采集</li>
+              <li nz-menu-item>排水户信息管理</li>
+              <li nz-menu-item>项目信息管理</li>
+              <li nz-menu-item>泵站信息管理</li>
+              <li nz-menu-item>污水处理厂信息管理</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="排水许可">
+            <ul>
+              <li nz-menu-item>许可信息管理</li>
+              <li nz-menu-item>许可督察监测</li>
+              <li nz-menu-item>许可绩效分析</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="源头监管">
+            <ul>
+              <li nz-menu-item>源头信息管理</li>
+              <li nz-menu-item>源头检查监测</li>
+              <li nz-menu-item>源头绩效分析</li>
+              <li nz-menu-item>排水户水量管理</li>
+              <li nz-menu-item>排水户危废管理</li>
+              <li nz-menu-item>排水户信用评价</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="污水厂监管">
+            <ul>
+              <li nz-menu-item nzSelected>污水厂报表管理</li>
+              <li nz-menu-item>补贴及形式发票管理</li>
+              <li nz-menu-item>污水厂绩效分析</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="在线监控">
+            <ul>
+              <li nz-menu-item>监测布点工具</li>
+              <li nz-menu-item>监测管理中心</li>
+              <li nz-menu-item>监测一张图</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="监管资料">
+            <ul>
+              <li nz-menu-item>排水户信息采集</li>
+              <li nz-menu-item>排水户信息</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-menu-item nzIcon="setting">配置</li>
+    </ul>
+  </nz-header>
+  <nz-content>
+    <nz-breadcrumb>
+      <nz-breadcrumb-item>数据中心</nz-breadcrumb-item>
+      <nz-breadcrumb-item>污水厂监管</nz-breadcrumb-item>
+      <nz-breadcrumb-item>污水厂报表管理</nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <nz-card nzTitle="常州市深水江边水处理有限公司污水运行月报表" nzSize="small">
+      <nz-table [nzData]="listOfData" nzBordered nzShowPagination="false" nzSize="small">
+        <tbody>
+          <tr>
+            <td rowspan="8">污水处理</td>
+          </tr>
+          <tr>
+            <td>污水处理量</td>
+            <td>5928373</td>
+            <td rowspan="4">污泥处理</td>
+            <td>脱水污泥量（T）</td>
+            <td>3645.00</td>
+            <td rowspan="4">污泥处理</td>
+            <td>用电量（度）</td>
+            <td>1636500</td>
+            <td rowspan="5">污水电单耗</td>
+            <td>污水（度/m3）</td>
+            <td>0.276</td>
+          </tr>
+          <tr>
+            <td rowspan="2">日均处理量</td>
+            <td rowspan="2">191238</td>
+            <td>絮凝剂用量（kg）</td>
+            <td>5250</td>
+            <td>日均用电量（度）</td>
+            <td>52790</td>
+            <td rowspan="2">CODcr（度/kg）</td>
+            <td rowspan="2">1.62</td>
+          </tr>
+          <tr>
+            <td>含水率（%）</td>
+            <td>77.9</td>
+            <td>用水量（T）</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>最高日处理量</td>
+            <td>214713</td>
+            <td>絮凝剂单耗（kg/T）</td>
+            <td>6.51</td>
+            <td>工业合成盐酸（T）</td>
+            <td>96.28</td>
+            <td>BOD5（度/kg）</td>
+            <td>5.87</td>
+          </tr>
+          <tr>
+            <td>最低日处理量</td>
+            <td>149202</td>
+            <td rowspan="3">混凝剂</td>
+            <td>产泥率(g/m３)</td>
+            <td>136</td>
+            <td rowspan="3">混凝剂</td>
+            <td>药单耗(g/m3)</td>
+            <td>16.2</td>
+            <td>SS（度/kg）</td>
+            <td>2.25</td>
+          </tr>
+          <tr>
+            <td>负荷率（%）</td>
+            <td>95.62</td>
+            <td>混凝剂用量（T）</td>
+            <td>59.28</td>
+            <td>氯酸钠（T）</td>
+            <td>34.87</td>
+            <td rowspan="2">乙酸-厌缺氧段</td>
+            <td>投加量（吨）</td>
+            <td>39.32</td>
+          </tr>
+          <tr>
+            <td>进水水温(℃)</td>
+            <td><input nz-input placeholder="small size" nzSize="small" [ngModel]="'17.5'"/></td>
+            <td>药单耗(g/m3)</td>
+            <td>10.00</td>
+            <td>药单耗(g/m3)</td>
+            <td>5.88</td>
+            <td>药单耗(g/m3)</td>
+            <td>6.63</td>
+          </tr>
+          <tr>
+            <td rowspan="9">处理质量</td>
+          </tr>
+          <tr>
+            <td rowspan="2">项目</td>
+            <td rowspan="2" colspan="2">进水</td>
+            <td rowspan="2" colspan="2">出水</td>
+            <td rowspan="2" colspan="2">去除率（%）</td>
+            <td rowspan="2">去除总量（kg)</td>
+            <td rowspan="2">乙酸-提标段</td>
+            <td>投加量（吨）</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>药单耗(g/m3)</td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <td>CODcr</td>
+            <td colspan="2">190</td>
+            <td colspan="2">19.3</td>
+            <td colspan="2">89.8</td>
+            <td>1011973</td>
+            <td rowspan="3">污泥去向</td>
+            <td>国电</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>BOD5</td>
+            <td colspan="2">48.0</td>
+            <td colspan="2"><2</td>
+            <td colspan="2">97.9</td>
+            <td>1011973</td>
+            <td>英科环境</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>TP</td>
+            <td colspan="2">2.37</td>
+            <td colspan="2">0.14</td>
+            <td colspan="2">94.1</td>
+            <td>1011973</td>
+            <td>应运行天数</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <td>TN</td>
+            <td colspan="2">26.9</td>
+            <td colspan="2">6.89</td>
+            <td colspan="2">74.4</td>
+            <td>1011973</td>
+            <td rowspan="3">运行情况</td>
+            <td>实际运行天数</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <td>NH3-N</td>
+            <td colspan="2">20.8</td>
+            <td colspan="2">0.42</td>
+            <td colspan="2">98</td>
+            <td>1011973</td>
+            <td>达标排放天数</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <td>粪大肠菌群数(个/L)</td>
+            <td colspan="7"><20</td>
+            <td>运转率</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>备注</td>
+            <td colspan="11">-</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </nz-card>
+    <nz-divider></nz-divider>
+    <div class="inner-content">
+      
+      <nz-tabset [nzTabBarExtraContent]="extraTemplate2">
+        <nz-tab nzTitle="深水江边">
+          <nz-table
+            [nzData]="listOfData"
+            nzFooter="一共有数据 {{ listOfData.length }} 条"
+          >
+            <thead>
+              <tr>
+                <th>报表名称</th>
+                <th>报表类型</th>
+                <th>数据时间段</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>水量液位核对月签单</td>
+                <td>运行报表</td>
+                <td>2020年1月1日 - 2020年1月31日</td>
+                <td>
+                  <a>详情</a>
+                  <nz-divider nzType="vertical"></nz-divider>
+                  <a>编辑</a>
+                </td>
+              </tr>
+              <tr>
+                <td>水量液位核对月签单</td>
+                <td>运行报表</td>
+                <td>2020年1月1日 - 2020年1月31日</td>
+                <td>
+                  <a>详情</a>
+                  <nz-divider nzType="vertical"></nz-divider>
+                  <a>编辑</a>
+                </td>
+              </tr>
+              <tr>
+                <td>水量液位核对月签单</td>
+                <td>运行报表</td>
+                <td>2020年1月1日 - 2020年1月31日</td>
+                <td>
+                  <a>详情</a>
+                  <nz-divider nzType="vertical"></nz-divider>
+                  <a>编辑</a>
+                </td>
+              </tr>
+              <tr>
+                <td>水量液位核对月签单</td>
+                <td>运行报表</td>
+                <td>2020年1月1日 - 2020年1月31日</td>
+                <td>
+                  <a>详情</a>
+                  <nz-divider nzType="vertical"></nz-divider>
+                  <a>编辑</a>
+                </td>
+              </tr>
+            </tbody>
+          </nz-table>
+        </nz-tab>
+        <nz-tab nzTitle="深水城北"> </nz-tab>
+        <nz-tab nzTitle="东南">Content of tab3</nz-tab>
+        <nz-tab nzTitle="龙澄">Content of tab4</nz-tab>
+      </nz-tabset>
+      <ng-template #extraTemplate2>
+        数据时间段：<nz-range-picker
+          [nzFormat]="dateFormat"
+          [nzShowTime]="limitSelectDate"
+        ></nz-range-picker>
+        <button nz-button nzType="primary" nz-dropdown [nzDropdownMenu]="menu">
+          新增
+        </button>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu nzSelectable>
+            <li nz-submenu nzTitle="运行报表">
+              <ul>
+                <li nz-menu-item>水量液位核对月签单</li>
+                <li nz-menu-item>进出水水质、污泥含水率月报表</li>
+                <li nz-menu-item>污水处理运行月报表</li>
+                <li nz-menu-item>药剂核对月签单</li>
+                <li nz-menu-item>除臭系统运行月报表</li>
+                <li nz-menu-item>污水运行月报表</li>
+                <li nz-menu-item nzDanger>硝化、反硝化、厌氧释磷实验</li>
+              </ul>
+            </li>
+            <li nz-submenu nzTitle="成本分析">
+              <ul>
+                <li nz-menu-item>财务成本分析</li>
+                <li nz-menu-item>实际成本分析</li>
+                <li nz-menu-item>费用汇总1</li>
+                <li nz-menu-item>单位成本汇总1</li>
+                <li nz-menu-item>费用汇总2</li>
+                <li nz-menu-item>单位成本汇总2</li>
+              </ul>
+            </li>
+            <li nz-menu-item>文件管理</li>
+          </ul>
+        </nz-dropdown-menu>
+      </ng-template>
+    </div>
+
+    <!-- <div class="inner-content">
+			
+		</div> -->
+  </nz-content>
+  <nz-footer
+    >Copyright © 2018-2020 常州排水源头系统 版权所有
+    ICP证：京ICP备15010239号-2</nz-footer
+  >
+</nz-layout>
